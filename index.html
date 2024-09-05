@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Currency-App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Currency Converter</header>
+      <form action="#">
+        <div class="amount">
+          <p>Please inter amount</p>
+          <input type="text" value="1" />
+        </div>
+
+        <div class="usd-irr">
+          <div class="from">
+            <p>FROM</p>
+            <div class="usd">
+              <img src="https://flagsapi.com/US/flat/64.png" alt="flag" />
+              <select>
+                <option value="USD">USD</option>
+              </select>
+            </div>
+          </div>
+          <din class="icon"><i class="fa fa-exchange"></i></din>
+          <div class="to">
+            <p>TO</p>
+            <div class="usd">
+              <img src="https://flagsapi.com/IR/flat/64.png" alt="flag" />
+              <select>
+                <option value="IRR">IR</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange-rate">1 USD = 600000 IRR</div>
+        <button>Get Exchange Rate</button>
+      </form>
+    </div>
+
+    <script src="main.ts"></script>
+  </body>
+</html>
