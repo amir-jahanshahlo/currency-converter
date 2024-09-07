@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Coding By Ali Aslan -->
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Currency Exchange App in JavaScript</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome CDN Link for Icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-
-    <title>Currency-App</title>
   </head>
   <body>
     <div class="wrapper">
-      <header>Currency Converter</header>
+      <header>Currency Exchange</header>
       <form action="#">
         <div class="amount">
-          <p>Please inter amount</p>
-          <input type="text" value="1" />
+          <p>Enter Amount</p>
+          <input type="number" id="amount" value="1" min="1" />
         </div>
-
-        <div class="usd-irr">
+        <div class="drop-list">
           <div class="from">
-            <p>FROM</p>
-            <div class="usd">
+            <p>From</p>
+            <div class="select-box">
               <img src="https://flagsapi.com/US/flat/64.png" alt="flag" />
-              <select>
-                <option value="USD">USD</option>
+              <select id="from-currency">
+                <!-- Options tag are inserted from JavaScript -->
               </select>
             </div>
           </div>
-          <din class="icon"><i class="fa fa-exchange"></i></din>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
           <div class="to">
-            <p>TO</p>
-            <div class="usd">
+            <p>To</p>
+            <div class="select-box">
               <img src="https://flagsapi.com/IR/flat/64.png" alt="flag" />
-              <select>
-                <option value="IRR">IR</option>
+              <select id="to-currency">
+                <!-- Options tag are inserted from JavaScript -->
               </select>
             </div>
           </div>
         </div>
-        <div class="exchange-rate">1 USD = 600000 IRR</div>
-        <button>Get Exchange Rate</button>
+        <div class="exchange-rate">Getting exchange rate...</div>
+        <button type="button" id="get-rate-button">Get Exchange Rate</button>
       </form>
     </div>
 
-    <script src="main.ts"></script>
+    <script src="cl.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
